@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ryan Mondega – Web Developer</title>
+<meta name="description" content="Portfolio of Ryan Mondega, web developer. Selected work, journey, about and contact.">
+<meta name="theme-color" content="#0d0c1f">
+<meta property="og:title" content="Ryan Mondega – Web Developer">
+<meta property="og:description" content="Portfolio of Ryan Mondega, web developer.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230d0c1f'/%3E%3Cpath d='M3 3h10v3H6v2h6v3H6v2H3z' fill='%23ff8f6b'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=IBM+Plex+Mono:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-5 4-8 8-8s8 3 8 8z"/></symbol>
+<symbol id="i-code" viewBox="0 0 24 24"><path d="M8 6 2 12l6 6 1.5-1.5L5 12l4.5-4.5zM16 6l-1.5 1.5L19 12l-4.5 4.5L16 18l6-6z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2l3 7 7 .5-5.5 4.5 2 7-6.5-4-6.5 4 2-7L2 9.5 9 9z"/></symbol>
+<symbol id="i-cup" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M3 8h14v6a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5zM17 9h2a3 3 0 0 1 0 6h-2v-2h2a1 1 0 0 0 0-2h-2z"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M2 5h20v14H2zM4.5 7 12 12.5 19.5 7z"/></symbol>
+<symbol id="i-send" viewBox="0 0 24 24"><path d="M2 21 23 12 2 3v7l15 2-15 2z"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M3 4h18v12H10l-5 4v-4H3z"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M7 2h10v20H7zM9 5v12h6V5z"/></symbol>
+<symbol id="i-trophy" viewBox="0 0 24 24"><path d="M7 3h10v5a5 5 0 0 1-10 0zM4 4h3v3a2 2 0 0 1-3-2zM17 4h3v1a3 3 0 0 1-3 3zM11 13h2v4h3v3H8v-3h3z"/></symbol>
+<symbol id="i-case" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M3 8h18v12H3zM9 8V5h6v3h-2V7h-2v1z"/></symbol>
+</defs></svg>
+<div class="screen" id="screen" data-page="home">
+  <div class="bar">
+    <button class="logo" id="home" aria-label="Back to the landing page">RM</button>
+    <div class="menu" id="fm"><a id="fb" tabindex="0" role="button" aria-haspopup="true">File</a>
+      <div class="drop" role="menu">
+        <button data-k="Projects"><span class="num">01</span><span class="lb">work.dir – selected work</span><kbd>1</kbd></button>
+        <button data-k="Experience"><span class="num">02</span><span class="lb">story.log – my path</span><kbd>2</kbd></button>
+        <button data-k="Profile"><span class="num">03</span><span class="lb">about.sys – about me</span><kbd>3</kbd></button>
+        <button data-k="Contact"><span class="num">04</span><span class="lb">hello.app – say hello</span><kbd>4</kbd></button>
+        <hr>
+        <button class="pr" id="pr"><span class="lb">Print résumé</span><kbd>⌘P</kbd></button>
+      </div></div>
+    <div class="menu" id="sm"><a id="sb" tabindex="0" role="button" aria-haspopup="true">Settings</a>
+      <div class="drop" role="menu">
+        <button data-act="fs"><span class="lb">Full screen</span></button>
+        <button data-act="crt"><span class="lb">Disable scanlines</span></button>
+        <button data-act="mute"><span class="lb">Mute sound</span></button>
+        <hr>
+        <div class="has-sub"><button data-act="theme"><span class="chev">›</span><span class="lb">Colour scheme</span><span class="chev">›</span></button><div class="fly" id="fly"></div></div>
+      </div></div>
+    <div class="sp"></div>
+    <button type="button" class="status" id="avail" title="Contact me" aria-label="Open to work: go to the contact page"><span class="dot"></span>open to work</button>
+    <div class="status" id="clock" style="min-width:130px"></div>
+  </div>
+  <div class="stage" id="stage" data-view="projects">
+    <svg class="exp" id="exp-back" viewBox="0 0 600 400" aria-hidden="true"><defs><path id="o1b" d="M50,205 A250,62 0 0 1 550,205" fill="none"/><path id="o1f" d="M550,205 A250,62 0 0 1 50,205" fill="none"/><path id="o2b" d="M110,205 A190,44 0 0 1 490,205" fill="none"/><path id="o2f" d="M490,205 A190,44 0 0 1 110,205" fill="none"/></defs><g transform="rotate(-6 300 205)"><use href="#o1b" class="orb"/><use href="#o2b" class="orb in"/></g></svg>
+    <canvas id="me" width="540" height="600"></canvas>
+    <canvas id="clear" width="540" height="600"></canvas>
+    <div class="fl" id="fl-projects">
+    <div class="win" style="left:36%;top:12%;animation-delay:0s" data-d="18"><i></i></div>
+    <div class="win b" style="left:55%;top:8%;animation-delay:-1.5s" data-d="-24"><i></i></div>
+    <div class="win" style="left:57%;top:40%;animation-delay:-3s;width:clamp(60px,6vw,96px)" data-d="30"><i></i></div>
+    <div class="win b" style="left:41%;top:33%;width:clamp(30px,3vw,46px);animation-delay:-2s" data-d="-40"><i></i></div>
+    </div>
+    <div class="fl" id="fl-profile">
+    <div class="win" style="left:36%;top:12%;animation-delay:0s" data-d="18"><svg viewBox="0 0 24 24"><use href="#i-user"/></svg></div>
+    <div class="win" style="left:55%;top:8%;animation-delay:-1.5s" data-d="-24"><svg viewBox="0 0 24 24"><use href="#i-code"/></svg></div>
+    <div class="win" style="left:57%;top:40%;animation-delay:-3s;width:clamp(60px,6vw,96px)" data-d="30"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg></div>
+    <div class="win" style="left:41%;top:33%;width:clamp(30px,3vw,46px);animation-delay:-2s" data-d="-40"><svg viewBox="0 0 24 24"><use href="#i-cup"/></svg></div>
+    </div>
+    <div class="fl" id="fl-contact">
+    <div class="win" style="left:36%;top:12%;animation-delay:0s" data-d="18"><svg viewBox="0 0 24 24"><use href="#i-mail"/></svg></div>
+    <div class="win" style="left:55%;top:8%;animation-delay:-1.5s" data-d="-24"><svg viewBox="0 0 24 24"><use href="#i-send"/></svg></div>
+    <div class="win" style="left:57%;top:40%;animation-delay:-3s;width:clamp(60px,6vw,96px)" data-d="30"><svg viewBox="0 0 24 24"><use href="#i-chat"/></svg></div>
+    <div class="win" style="left:41%;top:33%;width:clamp(30px,3vw,46px);animation-delay:-2s" data-d="-40"><svg viewBox="0 0 24 24"><use href="#i-phone"/></svg></div>
+    </div>
+    <svg class="exp" id="exp-front" viewBox="0 0 600 400" aria-hidden="true"><g id="orbmarks" transform="rotate(-6 300 205)"><use href="#o1f" class="orb"/><use href="#o2f" class="orb in"/></g></svg>
+    <div class="sub">WEB DEVELOPER</div>
+    <h1 class="name" id="nm">Ryan Mondega</h1>
+    <button class="c tl" data-k="Projects"><span class="n">01</span><small>work.dir</small><span class="t">Work</span><span class="e">ENTER ▸</span></button>
+    <button class="c tr" data-k="Experience"><span class="n">02</span><small>story.log</small><span class="t">Journey</span><span class="e">ENTER ▸</span></button>
+    <button class="c bl" data-k="Profile"><span class="n">03</span><small>about.sys</small><span class="t">About</span><span class="e">ENTER ▸</span></button>
+    <button class="c br" data-k="Contact"><span class="n">04</span><small>hello.app</small><span class="t">Hello</span><span class="e">ENTER ▸</span></button>
+  </div>
+  <section id="work" aria-label="Work">
+    <div class="crumb"><span>~/home / <b>work.dir</b><span id="cbp"></span></span><span>ESC · back home</span></div>
+    <div class="field" id="field"><div class="note" id="wnote"></div></div>
+    <aside id="proj" aria-hidden="true"><div class="in">
+      <div class="pj-top"><span id="pjn"></span><button class="pjx" id="pjx">close · esc</button></div>
+      <canvas id="pjc" width="448" height="448"></canvas>
+      <div id="pjg" hidden>
+        <button type="button" class="gmain" id="gmain" aria-label="View screenshot full size"><img alt=""><span>view full size</span></button>
+        <div class="gcap" id="gcap"></div>
+        <div class="gth" id="gth"></div>
+      </div>
+      <h2 id="pjt"></h2><div id="pjk"></div>
+      <p id="pjd"></p>
+      <dl id="pjl"></dl>
+      <a id="pja" href="#" target="_blank" rel="noopener" hidden>Visit project</a>
+    </div></aside>
+  </section>
+  <section id="journey" aria-label="Journey">
+    <div class="crumb"><span>~/home / <b>story.log</b><span id="cbj"></span></span><span>← → browse · ESC back home</span></div>
+    <div class="jmain">
+      <div class="jghost" id="jghost" aria-hidden="true"></div>
+      <div class="jdet" id="jdet">
+        <div class="jmeta" id="jmeta"></div>
+        <h2 class="jtitle" id="jtitle"></h2>
+        <div class="jplace" id="jplace"></div>
+        <p class="jabout" id="jabout"></p>
+        <ul class="jpts" id="jpts"></ul>
+        <div class="jtags" id="jtags"></div>
+        <div class="jnav"><button id="jp">prev</button><span id="jc"></span><button id="jn">next</button></div>
+      </div>
+    </div>
+    <div class="jtrack" id="jtrack"><div class="jline"></div><div class="jfill" id="jfill"></div></div>
+  </section>
+  <section id="about" aria-label="About">
+    <div class="crumb"><span>~/home / <b>about.sys</b></span><span>ESC · back home</span></div>
+    <div class="amain">
+      <div class="acol">
+        <h2 id="ab-title"></h2>
+        <p id="ab-lead"></p>
+        <div id="ab-body"></div>
+        <div class="alook"><small>Currently looking for</small><div id="ab-look"></div></div>
+      </div>
+      <aside class="acard"><h3>fact sheet</h3><dl id="ab-facts"></dl></aside>
+    </div>
+  </section>
+  <section id="hello" aria-label="Hello">
+    <div class="crumb"><span>~/home / <b>hello.app</b> / new message</span><span>ESC · back home</span></div>
+    <div class="hmain">
+      <div class="hform">
+        <h3 class="hhead">hello.app — new message</h3>
+        <div class="frow"><label>To</label><div class="fval"><a id="h-to" href="#"></a><small id="h-note"></small></div></div>
+        <div class="frow"><label for="h-from">From</label><input id="h-from" type="email" placeholder="you@example.com" autocomplete="email"></div>
+        <div class="frow"><label for="h-subj">Subject</label><input id="h-subj" type="text" placeholder="Website / Web app / Collaboration"></div>
+        <div class="frow split">
+          <label for="h-proj">Project</label>
+          <select id="h-proj"><option value="">Type (optional)</option><option>Website</option><option>Web app</option><option>System with database</option><option>Something else</option></select>
+          <label for="h-time">Timeline</label>
+          <select id="h-time"><option value="">Timing (optional)</option><option>As soon as possible</option><option>Within a month</option><option>1 to 3 months</option><option>Flexible</option></select>
+        </div>
+        <textarea id="h-msg" placeholder="Hi Ryan, I'm working on… what we need, the team and the timeline…" aria-label="Message"></textarea>
+        <button id="h-send" type="button">▸ SEND MESSAGE</button>
+        <div id="h-status" role="status"></div>
+      </div>
+      <aside class="hside">
+        <h3 class="hhead">find me online</h3>
+        <div id="h-links"></div>
+        <button id="h-copy" type="button">copy email address</button>
+      </aside>
+    </div>
+  </section>
+</div>
+<div id="lb" role="dialog" aria-label="Screenshot viewer">
+  <button type="button" id="lbx">close · esc</button>
+  <button type="button" id="lbp" aria-label="Previous screenshot">‹</button>
+  <figure><img id="lbi" alt=""><figcaption id="lbc"></figcaption></figure>
+  <button type="button" id="lbn" aria-label="Next screenshot">›</button>
+</div>
+<div id="modal"><div class="panel"><header><span id="mt"></span><button id="mx" aria-label="Close">[x]</button></header><div id="mb"></div></div></div>
+<div id="boot" role="status" aria-label="Loading">
+  <div class="bw">
+    <div class="bh"><span>RYAN MONDEGA · portfolio · build 1.0</span><span id="bp">0%</span></div>
+    <div class="log"></div>
+    <div class="bar2"><i id="bf"></i></div>
+    <div class="press">PRESS ANY KEY TO CONTINUE</div>
+    <div class="snd" id="snd">[S] SOUND: ON</div>
+  </div>
+</div>
+<div class="scan" id="scan"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
