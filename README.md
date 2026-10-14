@@ -23,7 +23,7 @@ Simply open `index.html` in a web browser to view the portfolio.
 
 ## Live Demo
 
-Visit the live site at: [Your GitHub Pages URL will go here]
+Visit the live site at:  https://ryanmondega64-collab.github.io/RYAN_PORTFOLIO/
 
 ## Author
 
