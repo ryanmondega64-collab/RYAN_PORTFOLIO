@@ -5,11 +5,11 @@ const SHOTS={"home": "data:image/webp;base64,UklGRuKWAABXRUJQVlA4INaWAADQvAKdASp
 // img: optional screenshot (a file path like 'shots/one.png' or a data URI). Leave '' to use a generated placeholder.
 // Note: img files only work when the site is hosted online (Netlify, GitHub Pages...), not when opened straight from a folder.
 const PROJECTS=[
-  {title:'EduGrade',tag:'Digital gradebook',year:'2024 – 2025',role:'Solo full-stack developer',stack:'PHP, PostgreSQL, Figma',
+  {title:'EduGrade',tag:'Digital gradebook',year:'2024 – 2025',role:'Full-stack developer',stack:'PHP, PostgreSQL, Figma',
    shots:[['home','Teacher dashboard: daily timetable, class size and recent activity'],['grading','Grading sheet: quiz, performance task and quarterly assessment scores with percentage (PS) and weighted (WS) scores'],['values','Core values report: quarterly behaviour ratings per learner (AO, SO, RO, NO)'],['final','Final grades: subject grades, general average and remarks, with report card and clearance list actions'],['admin','Principal dashboard: school-wide totals, academic calendar and approvals'],['master','Master list: every learner by grade and section, with status']],
    about:'EduGrade is a digital gradebook I built as my capstone for Naawan Central School. I gathered requirements from teachers and administrators, designed a normalized PostgreSQL database for students, subjects, grading periods and grade entries, and made an interface that non-technical and older educators can use comfortably. Teachers and admins sign in with secure role-based accounts.',
    link:'',img:SHOTS.tile},
-  {title:'PEDIPO GYM',tag:'Fitness system',year:'2026',role:'Solo full-stack developer (intern)',stack:'PHP, PostgreSQL, RBAC',
+  {title:'PEDIPO GYM',tag:'Fitness system',year:'2026',role:'Full-stack developer (intern)',stack:'PHP, PostgreSQL, RBAC',
    shots:[['pdash','Admin dashboard (left) and member app home (right): members, check-ins, revenue, membership mix and quick actions'],['pplan','Fees and membership plans in the admin panel, with the member\'s membership card in the app'],['psched','Class schedule in the admin panel, with the Book a Class screen in the member app'],['pcash','Cashier: QR check-in, payments, class bookings and membership requests, with the member profile screen'],['pcoach','Coach management in the admin panel, with the Personal Trainers screen in the app']],
    about:'PEDIPO GYM is a fitness ecosystem I built on my own during my internship with the Provincial Government of Misamis Oriental, from scoping to production deployment. It has a five-role account system (Cashier, Member, Coach, Admin and Superadmin), and each role has its own permissions and access.',
    link:'',img:SHOTS.ptile}
@@ -22,7 +22,7 @@ const JOURNEY=[
   {year:'2024',dates:'2024 – 2025',kind:'Capstone',
    title:'Full-Stack Developer — Capstone',place:'Naawan Central School',about:'',
    points:[
-     'Led development of EduGrade, a digital gradebook — solo, end to end',
+     'Led development of EduGrade, a digital gradebook , end to end',
      'Gathered requirements directly from teachers and school administrators',
      'Designed a normalized PostgreSQL schema for students, subjects, grading periods and grade entries',
      'Built an intuitive interface accessible to non-technical and older educators',
@@ -33,7 +33,7 @@ const JOURNEY=[
   {year:'2026',dates:'March 2026 – May 2026',kind:'Internship',
    title:'Full-Stack Developer Intern',place:'Provincial Government of Misamis Oriental (PEDIPO)',about:'',
    points:[
-     'Built the PEDIPO GYM fitness ecosystem solo, from scoping to production deployment',
+     'Built the PEDIPO GYM fitness ecosystem , from scoping to production deployment',
      'Implemented a 5-role account system: Cashier, Member, Coach, Admin and Superadmin',
      'Designed role-based permission logic with separate access for each user type',
      'Delivered the complete system on schedule while maintaining code quality',
@@ -47,7 +47,7 @@ const ABOUT={
   title:'About me',
   lead:"I don't just write code — I take a problem from a whiteboard to a working system that real people use every day.",
   paragraphs:[
-    "I'm a full-stack developer with hands-on experience shipping production systems solo. I've already built a school gradebook used by teachers at Naawan Central School and a multi-role gym platform for the Provincial Government of Misamis Oriental — both delivered on time, end-to-end, by me.",
+    "I'm a full-stack developer with hands-on experience shipping production systems. I've already built a school gradebook used by teachers at Naawan Central School and a multi-role gym platform for the Provincial Government of Misamis Oriental — both delivered on time, end-to-end, by me.",
     "I handle the full stack: requirements gathering, database design, backend logic, frontend UI, testing, and delivery. I work independently, communicate clearly with non-technical stakeholders, and take full ownership of what I build."
   ],
   looking:'A full-time or freelance role where I can build systems that matter.',
@@ -57,7 +57,7 @@ const ABOUT={
 // EDIT THIS: your contact details for the Hello page.
 const CONTACT={
   email:'ryanmondega64@gmail.com',
-  github:'github.com/ryanmondega',
+  github:'github.com/ryanmondega64-collab',
   linkedin:'linkedin.com/in/ryanmondega',
   note:'Open to full-time and freelance roles'
 };
